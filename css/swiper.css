@@ -1,0 +1,16 @@
+/*Social Medias*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	height: 244px !important;
+}
+
+.swiper-slide {
+	height: 244px !important;
+	color: red;
+}
+
+.swiper-container {
+	overflow: visible !important;
+}
+/*Social Medias*/

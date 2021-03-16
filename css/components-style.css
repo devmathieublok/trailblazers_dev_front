@@ -1,0 +1,482 @@
+.MarginBottom-10px {margin-bottom: 10px;}
+.MarginBottom-15px {margin-bottom: 15px;}
+.MarginBottom-20px {margin-bottom: 20px;}
+.MarginBottom-25px {margin-bottom: 25px;}
+.MarginBottom-30px {margin-bottom: 30px;}
+.MarginBottom-35px {margin-bottom: 35px;}
+.MarginBottom-40px {margin-bottom: 40px;}
+.MarginBottom-45px {margin-bottom: 45px;}
+.MarginBottom-50px {margin-bottom: 50px;}
+
+.MarginTop-10px {margin-top: 10px;}
+.MarginTop-15px {margin-top: 15px;}
+.MarginTop-20px {margin-top: 20px;}
+.MarginTop-25px {margin-top: 25px;}
+.MarginTop-30px {margin-top: 30px;}
+.MarginTop-35px {margin-top: 35px;}
+.MarginTop-40px {margin-top: 40px;}
+.MarginTop-45px {margin-top: 45px;}
+.MarginTop-50px {margin-top: 50px;}
+
+
+hr {
+	margin: 100px 0px 100px 0px;
+	opacity: 0.5;
+}
+
+/* TEXTES STYLES */
+
+@font-face {
+ font-family: "Aktifo";
+ src: url("../fonts/Aktifo-A-Book.ttf") format("truetype");
+}
+
+
+.Color-White {
+	color: #FFFFFF !important;
+}
+.Color-Black {
+	color: #131414 !important;
+}
+.Color-Purple {
+	color: #6750F7 !important;
+}
+
+h1, h2, h3 {
+	font-family: "Aktifo";
+	font-weight: lighter;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+h4, h5, h6, p {
+	font-family: "Work Sans";
+	font-weight: lighter;
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+	color: #131414;
+}
+
+h1 {
+	font-size: 140px;
+}
+
+h2 {
+	font-size: 110px;
+}
+
+@media screen and (max-width: 510px) {
+	h2 {
+		font-size: 55px;
+	}
+}
+
+h3 {
+	font-size: 90px;
+}
+
+h4 {
+	font-size: 55px;
+	line-height: 60px;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 36px;
+	line-height: 46px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	width: fit-content;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.Li-Main, .Li-Secondary{
+	font-size: 20px;
+	font-family: "Work Sans";
+	line-height: 30px;
+	max-width: 970px;
+	font-weight: 500;
+	list-style: none;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+.Li-Main:last-child, .Li-Secondary:last-child {
+	margin-bottom: 0px;
+}
+
+
+.Li-Main {
+	background-position: 0 13px;
+ 	padding-left: 25px;
+ 	background-image: url(../img/list/list-style-main.svg);
+}
+
+.Li-Secondary {
+	margin-left: 25px;
+	background-position: 0 13px;
+ 	padding-left: 25px;
+ 	background-image: url(../img/list/list-style-secondary.svg);
+}
+
+figcaption {
+	font-size: 14px;
+	font-family: "Work Sans";
+	color: grey;
+	font-weight: 500;
+}
+
+.Article-Categorie {
+	font-size: 15px;
+	font-family: "Work Sans";
+	color: #6750F7;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.Date {
+	font-size: 17px;
+	font-family: "Work Sans";
+	font-weight: 400;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.Nav-Link {
+	font-style: lighter;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration-line: none;
+	font-family: 'Work Sans', sans-serif;
+	transition: opacity ease-in-out 0.3s;
+}
+
+.Footer-Link {
+	text-decoration-line: none;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	color: #FFFFFF;
+	transition: opacity ease-in-out 0.3s;
+}
+
+.Nav-Link:hover, .Footer-Link:hover {
+  opacity: 0.5;
+}
+
+
+/* TEXTES STYLES */
+
+/*CTA Main*/
+
+.CTA {
+	font-size: 16px;
+	font-family: "Work Sans";
+	text-decoration: none;
+	color: #111213;
+	font-weight: 500;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+.CTA-Main {
+	border-top: solid 2px #111213;
+	border-bottom: solid 2px #111213;
+	padding: 20px 0px;
+	max-width: 870px;
+	display: flex;
+	justify-content: space-between;
+	transition: background ease-in 0.3s;
+	transition: padding ease-in 0.3s;
+}
+
+.CTA-Main:hover {
+	background-color: #F6F6F6;
+	padding: 20px 20px;
+	transition: padding ease-in 0.3s;
+}
+
+/*CTA Main*/
+
+/*CTA Secondary*/
+
+.CTA-Secondary {
+	border-bottom: solid 2px #111213;
+	padding: 0px 0px 20px 0px;
+	min-width: 250px;
+	display: flex;
+	justify-content: space-between;
+	transition: all ease-in 0.3s;
+	height: fit-content;
+}
+
+.CTA-Secondary-White {
+	border-bottom: solid 2px #FFFFFF !important;
+}
+
+.CTA-Secondary:hover {
+	padding: 0px 10px 20px 0px;
+	color: #6750F7;
+}
+
+/*CTA Secondary*/
+
+/*Link Main*/
+
+.Link-Main {
+	padding: 0px 0px;
+	display: inline-flex;
+	justify-content: space-between;
+	transition: all ease-in 0.3s;
+}
+
+.Link-Main > img {
+	transition: padding ease-in 0.3s;
+	padding-left: 30px;
+}
+
+.Link-Main:hover {
+	color: #6750F7;
+}
+
+.Link-Main:hover > img {
+	padding-left: 20px;
+}
+
+/*Link Main*/
+
+/*Filtres*/
+
+.Filtres {
+	font-family: "Work Sans";
+	font-size: 16px;
+	color: #131414;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all ease-in 0.3s;
+}
+
+.Filtres:hover {
+	color: #6750F7;
+}
+
+
+.Add, .Less, .Add-XL, .Less-XL, .Add-L, .Less-L {
+	color: #6750F7;
+	font-weight: 600;
+	font-size: 20px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.Add-L, .Less-L {
+	padding-left: 30px;
+}
+
+
+.Hide, .Less, .Less-XL, .Less-L {
+	display: none;
+}
+
+.Filtres-Options {
+	font-family: "Work Sans";
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	display: none;
+}
+
+
+.Filtres-Options-Link {
+	color: grey !important;
+	text-decoration: none;
+	padding-bottom: 5px;
+	display: flex;
+	transition: all ease-out 0.2s;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.Filtres-Options-Link:hover {
+	opacity: 0.8;
+}
+
+.Filtres-Options-Link:last-child {
+	padding-bottom: 0px;
+}
+
+/*Filtres*/
+
+/*Article*/
+article {
+	display: flex;
+	flex-direction: column;
+	min-height: 200px;
+	width: 490px;
+	justify-content: space-between;
+	background: linear-gradient(#111213, #111213) left bottom/100% 3px no-repeat;
+	padding-bottom: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+
+article > img {
+	position: absolute;
+	clip-path: ellipse(170px 170px at 170px 170px);
+	background: #6750F7;
+	width: 340px;
+	right: -70px;
+	opacity: 0;
+	transition: all ease-in 0.3s;
+	z-index: -1;
+}
+
+
+article:hover > img {
+	opacity: 1;
+	transition: all ease-in 0.3s;
+}
+
+.Article-H5 {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    transition: opacity ease-in-out 0.5s;
+    cursor: url('../img/article/arrow.svg'), auto;
+}
+/*Article*/
+
+/*DropDown*/
+.DropDown{
+	border-bottom: solid 2px #111213;
+	padding-bottom: 40px;
+	width: fit-content;
+	transition: all ease-out 0.2s;
+	cursor: pointer;
+}
+
+.DropDown-Options-XL, .DropDown-Options-L {
+	display: none;
+}
+
+.H2-DropDown, .H5-DropDown {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.H2-DropDown {
+	width: 1248px;
+}
+
+.H5-DropDown {
+	width: fit-content;
+}
+
+.Add-XL, .Less-XL {
+	font-size: 30px;
+}
+/*DropDown*/
+
+/*Social Post*/
+.Social-Post {
+	min-width: 615px;
+	max-width: 615px;
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #EFF1FF;
+	position: relative;
+	transition: all 0.5s ease-out;
+}
+
+.Social-Post:hover {
+	background-color: #6750F7;
+	transition: all 0.5s ease-out;
+}
+
+/*Hover Color Post*/
+.Social-Post:hover > .Social-Head > .Social-Post-Date, .Social-Post:hover > .Social-Content, .Social-Post:hover > .Social-Head > .Social-Head-Box > .Social-User {
+	color: #FFFFFF !important;
+	transition: all 0.5s ease-out;
+}
+
+.Social-Post:hover > .Social-Head > .Social-Head-Box > svg path {
+	fill: white;
+	transition: all 0.5s ease-out;
+}
+/*Hover Color Post*/
+
+
+.Social-Head {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.Social-Head > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.Social-User {
+	font-family: "Work Sans";
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 15px;
+	color: #111213;
+}
+
+.Social-Content {
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.Social-Post-Link-Box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*Social Post*/

@@ -1,0 +1,561 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+  margin: 0px;
+}
+
+.Content {
+  padding: 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Content-Small {
+  padding: 0px 50px;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 510px) {
+  .Content, .Content-Small {
+    padding: 40px 25px;
+  }
+}
+
+.Content-Full {
+  background-color: #131414;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.Hide {
+  display: none;
+}
+
+
+/*Margin for all the sections*/
+.Section-Presentation, .Section-Vision, .Section-Services-Margin, .Section-Articles, .Section-Socials-Posts, .Section-Footer {
+  margin-top: 130px;
+}
+/*Margin for all the sections*/
+
+.Header {
+  height: 100vh;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 510px) {
+  .Header {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .Logo > img {
+    width: 180px;
+  }
+}
+
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 510px) {
+  .Nav-Link-Contact {
+    display: none !important;
+  }
+}
+
+
+.Links > ul  {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.Open {
+  margin-left: 50px;
+  align-items: center;
+}
+
+.Open:after {
+  content: '';
+  margin-left: 20px;
+  background-image: url('../img/nav/menu-open.svg');
+  width: 60px;
+  height: 60px;
+} 
+
+.H2-Box {
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  margin: 0px;
+  text-align: right;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 510px) {
+  .H2-Box {
+    align-items: flex-end;
+    text-align: left;
+  }
+}
+
+
+.Triangles-Box {
+  width: 100%;
+  max-width: 570px;
+  height: 100%;
+  position: absolute;
+  border-right: solid 4px #FFFFFF;
+  top: 0;
+  transition: all ease-in 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media screen and (max-width: 510px) {
+  .Triangles-Box {
+    display: none;
+  }
+}
+
+.Header-Triangle-Blue {
+  position: absolute;
+  top: 280px;
+  left: -50px;
+  width: 100%;
+  max-width: 515px;
+}
+
+
+.Header-Triangle-White {
+  position: absolute;
+  bottom: -1px;
+  left: 50px;
+  width: 100%;
+  max-width: 253px;
+}
+
+
+/* Header
+
+/*Menu*/
+.Content-Full-Menu {
+  background-color: #6750F7;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.Menu-Section {
+  height: 100vh;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Section {
+    min-height: auto;
+  }
+}
+
+.Menu-Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Close {
+  align-items: center;
+  margin-right: 9px;
+}
+
+.Close:after {
+  content: '';
+  margin-left: 20px;
+  margin-right: -9px;
+  background-image: url('../img/nav/menu-close.svg');
+  width: 60px;
+  height: 60px;
+}
+
+.Menu-Nav > ul > li {
+  list-style: none;
+}
+
+.Menu-Nav-List {
+  display: flex;
+}
+
+.Menu-Nav-List > li:first-child {
+  margin-right: 10px;
+}
+
+.Menu-Nav-Links {
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Nav-Links {
+    margin-bottom: 50px;
+  }
+}
+
+
+/*Hover Link Nav Animation*/
+.Menu-Nav-Links > h2 > a {
+  text-decoration: none;
+  margin-bottom: 0px !important;
+  display: inline-block;
+  transition:opacity 0.3s ease;
+}
+
+
+.Menu-Nav-Links > h2 > a:after {
+  position: absolute;
+  right: 220px;
+  font-size: 20px;
+  text-transform: lowercase;
+  max-width: 300px;
+  letter-spacing: -0.2px;
+  line-height: 28px;
+  text-align: right;
+  font-weight: 100;
+  font-family: "Work Sans" !important;
+  border-right: solid 2px white;
+  padding-right: 35px;
+  height: 0%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Nav-Links > h2 > a:after {
+    display: none;
+  }
+}
+
+.Link-Cabinet-Content {
+  width: fit-content;
+  background: linear-gradient(#FFF, #FFF) left bottom/0% 4px no-repeat;
+  transition:1s all;
+}
+
+.Link-Cabinet-Content:hover {
+   background-size: 100% 4px;
+}
+/*Hover Link Nav Animation*/
+
+/*Hover Link Nav Content*/
+.Link-Cabinet-Content:nth-child(1) > a:after {
+  content: 'Nous accompagnons  les entreprises dans l’intégration du digital dans leur stratégie et leur culture d’entreprise  en travaillant avec  leurs équipes.';
+}
+
+.Link-Cabinet-Content:nth-child(2) > a:after {
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, ligula ac sollicitudin egestas.';
+}
+
+.Link-Cabinet-Content:nth-child(3) > a:after {
+  content: 'Sed et tristique libero. Suspendisse euismod tristique mi, a sollicitudin mi tempus nec. Fusce tincidunt eros.';
+}
+
+.Link-Cabinet-Content:nth-child(4) > a:after {
+  content: 'Sed et tristique libero. Suspendisse euismod tristique mi, a sollicitudin mi tempus nec. Fusce tincidunt eros.';
+}
+/*Hover Link Nav Content*/
+
+.Menu-Nav-Links > h2 > a:hover:after {
+  opacity: 1;
+  height: 120%;
+  transition: opacity 0.3s ease;
+}
+
+.Menu-Nav-Links > h2  {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Nav-Links > h2 {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.Menu-Nav-Links > h2:last-child  {
+  margin-bottom: 0px !important;
+}
+
+.Menu-Flex-Box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Flex-Box {
+    flex-direction: column;
+  }
+}
+
+.Menu-Contact-Infos {
+  display: flex;
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  height: fit-content;
+  position: absolute;
+  bottom: 480px;
+  right: 0;
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Contact-Infos {
+    transform: none;
+    position: inherit;
+    display: initial;
+    bottom: auto;
+  }
+}
+
+.Menu-Contact-Infos > a {
+  text-transform: lowercase;
+}
+
+.Menu-Contact-Infos > a:first-child {
+  margin-right: 50px; 
+}
+
+@media screen and (max-width: 510px) {
+  .Menu-Contact-Infos > a:first-child {
+    margin-right: 0px;
+    margin-bottom: 10px; 
+  }
+}
+/*Menu*/
+
+/*Section Wrapper*/
+.Columns-2X {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Columns-2X > div {
+  width: 890px;
+}
+
+.Columns-2X > h6 {
+  margin-right: 200px;
+}
+/*Section Wrapper*/
+
+/*Section Keywords*/
+
+/*Keywords Animation*/
+.Box-Keywords, .Keywords-Title {
+  transition: all ease-in-out 0.5s;
+}
+
+.Box-Keywords:hover .Keywords-Title {
+  opacity: 0.0888 ;
+}
+
+.Box-Keywords:hover .Keywords:hover .Keywords-Title {
+  opacity: 1; 
+}
+/*Keywords Animation*/
+
+.Keywords-Title {
+  z-index: -1;
+  cursor: pointer;
+}
+
+.Keywords-Title:hover ~ .Keywords-Description {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity ease-in 0.2s;
+}
+
+.Keywords-Description {
+  margin-left: 125px;
+  max-width: 740px;
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity ease-in 0.2s;
+}
+
+.Keywords-Title:hover {
+  color: #6750F7;
+}
+/*Section Keywords*/
+
+/*Services*/
+.Section-Services {
+  min-height: 900px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.Service-Triangle-Blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 170px;
+}
+
+.Service-Photo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.Box-Services {
+  max-width: 870px;
+}
+
+.UL-CTA-FlexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.UL-CTA-FlexBox > div {
+  display: block;
+}
+/*Services*/
+
+/*Articles*/
+.Box-H2-A, .Box-Articles-4X {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Box-Articles-4X {
+  margin-top: 100px;
+}
+
+.Box-Articles-2X > article {
+  margin-bottom: 100px;
+}
+/*Articles*/
+
+/*Social-Posts*/
+.Socials-Posts-Slider {
+  margin-top: 50px;
+}
+/*Social-Posts*/
+
+/*Footer*/
+.Section-Footer {
+  padding: 140px 0px;
+}
+
+.Box-Footer-Social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box-Footer-Social > div > .Footer-Link:last-child {
+  margin-left: 60px;
+}
+
+.Box-Footer-Mailto {
+  margin-top: 160px;
+}
+
+.Box-Footer-Mailto > a {
+  font-family: "Work Sans";
+  font-size: 100px;
+  background: linear-gradient(#FFF, #FFF) left bottom/100% 4px no-repeat;
+  transition:all ease-out 2s;
+  padding-bottom: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box-Footer-Mailto > a:hover {
+  background: linear-gradient(#FFF, #FFF) left bottom/0% 4px no-repeat;
+}
+
+
+.Box-Footer-Links {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box-Footer-Links > div > a {
+  font-family: "Work Sans";
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: solid 1px #FFFFFF;
+  transition: all ease-in 0.2s;
+}
+
+.Box-Footer-Links > div > a:hover {
+  opacity: 1;
+}
+
+.Box-Footer-Links > div > a:first-child {
+  margin-right: 30px;
+}
+
+.Footer-Link-Copyright {
+  font-family: "Work Sans";
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 15px;
+}
+/*Footer*/
