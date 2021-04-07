@@ -1,5 +1,5 @@
 <div class="Box-Services" >
-	<h6 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"class="Color-White MarginBottom-50px">Services</h6>
+	<h6 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"class="Color-White">Services</h6>
 	<h4 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"class="Color-White MarginBottom-50px">Le cabinet intervient à 3 niveaux auprès de ses clients en impliquant 3 profils de consultants</h4>
 	<div class="UL-CTA-FlexBox MarginTop-10px" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
 		<ul>
