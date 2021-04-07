@@ -5,7 +5,7 @@
 	<div class="Links">
 		<ul>
 			<li><a href="#!" class="Nav-Link Nav-Link-Contact">Contact</a></li>
-			<li><a href="#!" class="Nav-Link Open">Menu</a></li>
+			<li><a href="#!" class="Nav-Link Open Menu-Label">Menu</a></li>
 		</ul>
 	</div>
 </nav>

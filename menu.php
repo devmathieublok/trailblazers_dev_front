@@ -6,7 +6,7 @@
 				<li><a href="#!" class="Nav-Link">EN</a></li>
 			</ul>
 			<ul class="Menu-Close-List">
-				<li><a href="#!" class="Nav-Link Close">Close</a></li>
+				<li><a href="#!" class="Nav-Link Close Menu-Label">Close</a></li>
 			</ul>
 		</div>
 		<div class="Menu-Flex-Box">

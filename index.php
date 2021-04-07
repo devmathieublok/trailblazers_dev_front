@@ -2,6 +2,9 @@
 	<?php require 'head.php'; ?>
 
 	<main data-barba="Container" data-barba-namespace="home">
+		<div id="ContactPointer">
+			<div class="Pointer"></div>
+		</div>
 		<!-- HEADER -->
 		<div class="Content-Full">
 			<header class="Content Header">
@@ -28,7 +31,7 @@
 					<h6 class="">Présentation</h6>
 					<div class="Box-H5-CTA">
 						<h4 class="MarginBottom-50px">Nous accompagnons les entreprises dans l'intégration du digital dans leur stratégie et leur culture d'entreprise en travaillant avec leurs équipes.</h4>
-						<a href="#!" class="CTA CTA-Main">Découvrir le cabinet
+						<a href="#!" class="CTA CTA-Main PointerLink">Découvrir le cabinet
 							<img src="../img/a/arrow.svg" alt="Lien">
 						</a>
 					</div>
@@ -47,15 +50,15 @@
 						</div>
 						<div class="Keywords">
 							<h1 class="Keywords-Title">Disruptif</h1>
-							<h5 class="Keywords-Description">Parce que nous pensons que la créativité est la clé pour se démarquer et proposer de l'innovation dans un service.</h5>
+							<h5 class="Keywords-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nunc</h5>
 						</div>
 						<div class="Keywords">
 							<h1 class="Keywords-Title">Effiface</h1>
-							<h5 class="Keywords-Description">Parce que nous pensons que la créativité est la clé pour se démarquer et proposer de l'innovation dans un service.</h5>
+							<h5 class="Keywords-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nunc</h5>
 						</div>
 						<div class="Keywords">
 							<h1 class="Keywords-Title">Ambitieux</h1>
-							<h5 class="Keywords-Description"></h5>
+							<h5 class="Keywords-Description">Lorem ipsum dolor sit amet consectetur.</h5>
 						</div>
 					</div>
 				</div>
@@ -81,12 +84,12 @@
 							<a href="#!" class="CTA Link-Main">Découvrir le cabinet<img src="../img/a/arrow.svg" alt="Lien"></a>
 						</div>
 					</div>
-					<div class="Box-Articles-4X" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
-						<div class="Box-Articles-2X">
+					<div class="Box-Articles-4X">
+						<div class="Box-Articles-2X" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 							<?php require 'components/article.php';?>
 							<?php require 'components/article.php';?>
 						</div>
-						<div class="Box-Articles-2X">
+						<div class="Box-Articles-2X" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 							<?php require 'components/article-image.php';?>
 							<?php require 'components/article.php';?>
 						</div>
@@ -96,7 +99,7 @@
 			<!-- ARTICLE -->
 
 			<!-- SOCIALS POSTS -->
-		<section class="Section-Socials-Posts">
+			<section class="Section-Socials-Posts">
 				<div class="Content-Small">
 					<h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">Nous suivre</h2>
 					<div class="Socials-Posts-Slider" >
@@ -109,7 +112,7 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section> 
 			<!-- SOCIALS POSTS -->
 
 			<!-- FOOTER -->
@@ -136,7 +139,7 @@
 						</div>
 					</div>
 				</div>
-			</footer> -->
+			</footer> 
 			<!-- FOOTER -->
 		</div>
 	</main>
